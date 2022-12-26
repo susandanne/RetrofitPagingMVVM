@@ -12,13 +12,13 @@ import com.sumon.retrofitpagingmvvm.Model.Result
 class QutesAdaprter:PagingDataAdapter<com.sumon.retrofitpagingmvvm.Model.Result,QutesAdaprter.quotesViewHolder> (Comparator){
 
 
-    class quotesViewHolder( sumanBinding: SumanBinding)
+    class quotesViewHolder(public val sumanBinding: SumanBinding)
         :RecyclerView.ViewHolder(sumanBinding.root)
 
     override fun onBindViewHolder(holder: quotesViewHolder, position: Int) {
         getItem(position).let {
-            holder.
-//            quoteTv.text = it?.content
+            holder.sumanBinding.quoteTv.text=it?.content
+
         }
     }
 
