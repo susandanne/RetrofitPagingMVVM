@@ -6,6 +6,7 @@ import androidx.paging.liveData
 import com.sumon.retrofitpagingmvvm.API.QuotesApi
 import com.sumon.retrofitpagingmvvm.Pagination.QuotesPagingSource
 import javax.inject.Inject
+import kotlin.math.max
 
 class QuotesRepo @Inject constructor (private val qoutesapi:QuotesApi) {
 fun getallquotes()=Pager(

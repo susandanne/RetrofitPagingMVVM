@@ -1,23 +1,35 @@
 package com.sumon.retrofitpagingmvvm.UI
 
+import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.paging.PagingDataAdapter
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
+import com.example.retrofitpagingmvvm.databinding.SumanBinding
 import com.sumon.retrofitpagingmvvm.Model.Result
 
 class QutesAdaprter:PagingDataAdapter<com.sumon.retrofitpagingmvvm.Model.Result,QutesAdaprter.quotesViewHolder> (Comparator){
 
 
-    class quotesViewHolder(itemView: View) :RecyclerView.ViewHolder(itemView)
+    class quotesViewHolder( sumanBinding: SumanBinding)
+        :RecyclerView.ViewHolder(sumanBinding.root)
 
     override fun onBindViewHolder(holder: quotesViewHolder, position: Int) {
-        TODO("Not yet implemented")
+        getItem(position).let {
+            holder.
+//            quoteTv.text = it?.content
+        }
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): quotesViewHolder {
-        TODO("Not yet implemented")
+        return quotesViewHolder(
+            SumanBinding.inflate(
+                LayoutInflater.from(parent.context),
+                parent,
+                false
+            )
+        )
     }
 
 companion object {

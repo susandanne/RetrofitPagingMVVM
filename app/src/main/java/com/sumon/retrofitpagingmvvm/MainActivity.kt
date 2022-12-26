@@ -2,6 +2,7 @@ package com.sumon.retrofitpagingmvvm
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.example.retrofitpagingmvvm.R
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
