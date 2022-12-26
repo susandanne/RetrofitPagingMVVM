@@ -1,13 +1,13 @@
-package com.example.retrofitpagingmvvm.UI
+package com.sumon.retrofitpagingmvvm.UI
 
 import android.view.View
 import android.view.ViewGroup
 import androidx.paging.PagingDataAdapter
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
-import com.example.retrofitpagingmvvm.Model.Result
+import com.sumon.retrofitpagingmvvm.Model.Result
 
-class QutesAdaprter:PagingDataAdapter<com.example.retrofitpagingmvvm.Model.Result,QutesAdaprter.quotesViewHolder> (Comparator){
+class QutesAdaprter:PagingDataAdapter<com.sumon.retrofitpagingmvvm.Model.Result,QutesAdaprter.quotesViewHolder> (Comparator){
 
 
     class quotesViewHolder(itemView: View) :RecyclerView.ViewHolder(itemView)
@@ -22,7 +22,7 @@ class QutesAdaprter:PagingDataAdapter<com.example.retrofitpagingmvvm.Model.Resul
 
 companion object {
     private val Comparator =
-        object : DiffUtil.ItemCallback<com.example.retrofitpagingmvvm.Model.Result>() {
+        object : DiffUtil.ItemCallback<com.sumon.retrofitpagingmvvm.Model.Result>() {
             override fun areItemsTheSame(oldItem: Result, newItem: Result): Boolean {
                 TODO("Not yet implemented")
             }

@@ -1,4 +1,4 @@
-package com.example.retrofitpagingmvvm.Model
+package com.sumon.retrofitpagingmvvm.Model
 
 data class Result(
     val _id: String,

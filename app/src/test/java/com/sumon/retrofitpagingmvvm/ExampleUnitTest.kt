@@ -1,4 +1,4 @@
-package com.example.retrofitpagingmvvm
+package com.sumon.retrofitpagingmvvm
 
 import org.junit.Test
 

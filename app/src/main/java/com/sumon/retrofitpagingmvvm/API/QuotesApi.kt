@@ -1,6 +1,6 @@
-package com.example.retrofitpagingmvvm.API
+package com.sumon.retrofitpagingmvvm.API
 
-import com.example.retrofitpagingmvvm.Model.ResponseQuotes
+import com.sumon.retrofitpagingmvvm.Model.ResponseQuotes
 import retrofit2.http.GET
 import retrofit2.http.Query
 

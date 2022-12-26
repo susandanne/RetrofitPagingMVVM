@@ -1,4 +1,4 @@
-package com.example.retrofitpagingmvvm
+package com.sumon.retrofitpagingmvvm
 
 import android.app.Application
 import dagger.hilt.android.HiltAndroidApp

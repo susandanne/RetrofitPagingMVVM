@@ -1,4 +1,4 @@
-package com.example.retrofitpagingmvvm.Model
+package com.sumon.retrofitpagingmvvm.Model
 
 data class ResponseQuotes( val count: Int,
                            val lastItemIndex: Int,
