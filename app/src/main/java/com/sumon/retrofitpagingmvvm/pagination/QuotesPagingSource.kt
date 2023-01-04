@@ -1,9 +1,9 @@
-package com.sumon.retrofitpagingmvvm.Pagination
+package com.sumon.retrofitpagingmvvm.pagination
 
 import androidx.paging.PagingSource
 import androidx.paging.PagingState
-import com.sumon.retrofitpagingmvvm.API.QuotesApi
-import com.sumon.retrofitpagingmvvm.Model.Result
+import com.sumon.retrofitpagingmvvm.api.QuotesApi
+import com.sumon.retrofitpagingmvvm.model.Result
 
 
 class QuotesPagingSource(private val api: QuotesApi) :PagingSource<Int,Result>() {

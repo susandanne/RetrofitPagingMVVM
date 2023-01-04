@@ -1,4 +1,4 @@
-package com.sumon.retrofitpagingmvvm.UI
+package com.sumon.retrofitpagingmvvm.ui
 
 object Util {
    fun posterUrlMake(

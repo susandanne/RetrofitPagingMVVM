@@ -1,7 +1,6 @@
-package com.sumon.retrofitpagingmvvm.API
+package com.sumon.retrofitpagingmvvm.api
 
 import com.sumon.retrofitpagingmvvm.Constant.key
-import com.sumon.retrofitpagingmvvm.Model.ResponseQuotes
 import com.sumon.retrofitpagingmvvm.moviewmodel.ResponseUpcomingMovie
 import retrofit2.http.GET
 import retrofit2.http.Query

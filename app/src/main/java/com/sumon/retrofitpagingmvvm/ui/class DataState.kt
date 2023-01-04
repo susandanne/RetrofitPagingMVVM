@@ -1,4 +1,4 @@
-package com.sumon.retrofitpagingmvvm.UI
+package com.sumon.retrofitpagingmvvm.ui
 
 sealed class  DataState<T>(
     val data: T? =null,

@@ -1,6 +1,6 @@
-package com.sumon.retrofitpagingmvvm.DI
+package com.sumon.retrofitpagingmvvm.di
 
-import com.sumon.retrofitpagingmvvm.API.QuotesApi
+import com.sumon.retrofitpagingmvvm.api.QuotesApi
 import com.sumon.retrofitpagingmvvm.Constant
 import dagger.Module
 import dagger.Provides

@@ -1,21 +1,16 @@
-package com.sumon.retrofitpagingmvvm.UI
+package com.sumon.retrofitpagingmvvm.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
-import androidx.lifecycle.LifecycleOwner
 import androidx.lifecycle.ViewModelProvider
 import androidx.lifecycle.lifecycleScope
 import androidx.paging.LoadState
 import androidx.paging.PagingDataAdapter
-import com.example.retrofitpagingmvvm.R
 import com.example.retrofitpagingmvvm.databinding.ActivityMainBinding
-import com.sumon.retrofitpagingmvvm.UI.QuotesViewModel
-import com.sumon.retrofitpagingmvvm.UI.QutesAdaprter
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.flow.collectLatest
 import kotlinx.coroutines.launch
-import java.security.Provider
 
 @AndroidEntryPoint
 class MainActivity : AppCompatActivity() {

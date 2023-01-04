@@ -1,14 +1,12 @@
-package com.sumon.retrofitpagingmvvm.UI
+package com.sumon.retrofitpagingmvvm.ui
 
 import android.view.LayoutInflater
-import android.view.View
 import android.view.ViewGroup
 import androidx.paging.PagingDataAdapter
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.example.retrofitpagingmvvm.databinding.SumanBinding
-import com.sumon.retrofitpagingmvvm.Model.Result
 import com.sumon.retrofitpagingmvvm.moviewmodel.MovieResult
 
 class QutesAdaprter:PagingDataAdapter<MovieResult,QutesAdaprter.quotesViewHolder> (Comparator){
