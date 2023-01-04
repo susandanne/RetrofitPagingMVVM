@@ -6,10 +6,12 @@ import android.view.ViewGroup
 import androidx.paging.PagingDataAdapter
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
+import com.bumptech.glide.Glide
 import com.example.retrofitpagingmvvm.databinding.SumanBinding
 import com.sumon.retrofitpagingmvvm.Model.Result
+import com.sumon.retrofitpagingmvvm.moviewmodel.MovieResult
 
-class QutesAdaprter:PagingDataAdapter<com.sumon.retrofitpagingmvvm.Model.Result,QutesAdaprter.quotesViewHolder> (Comparator){
+class QutesAdaprter:PagingDataAdapter<MovieResult,QutesAdaprter.quotesViewHolder> (Comparator){
 
 
     class quotesViewHolder(public val sumanBinding: SumanBinding)
@@ -17,7 +19,7 @@ class QutesAdaprter:PagingDataAdapter<com.sumon.retrofitpagingmvvm.Model.Result,
 
     override fun onBindViewHolder(holder: quotesViewHolder, position: Int) {
         getItem(position).let {
-            holder.sumanBinding.quoteTv.text=it?.content
+            Glide.with(holder.sumanBinding.root.context).load(Util.posterUrlMake(it?.posterPath))
 
         }
     }
@@ -34,13 +36,13 @@ class QutesAdaprter:PagingDataAdapter<com.sumon.retrofitpagingmvvm.Model.Result,
 
 companion object {
     private val Comparator =
-        object : DiffUtil.ItemCallback<com.sumon.retrofitpagingmvvm.Model.Result>() {
-            override fun areItemsTheSame(oldItem: Result, newItem: Result): Boolean {
-                TODO("Not yet implemented")
+        object : DiffUtil.ItemCallback<MovieResult>() {
+            override fun areItemsTheSame(oldItem: MovieResult, newItem: MovieResult): Boolean {
+           return oldItem.id==newItem.id
             }
 
-            override fun areContentsTheSame(oldItem: Result, newItem: Result): Boolean {
-                TODO("Not yet implemented")
+            override fun areContentsTheSame(oldItem: MovieResult, newItem: MovieResult): Boolean {
+                return oldItem==newItem
             }
 
 
