@@ -11,8 +11,8 @@ interface QuotesApi {
 
  @GET("3/movie/upcoming?api_key=$key")
  suspend fun getalldata(
-  @Query("language")language : String,
-  @Query("page")page :Int
+     @Query("language") language: String,
+     @Query("page") page:Int
 
  ):ResponseUpcomingMovie
 }

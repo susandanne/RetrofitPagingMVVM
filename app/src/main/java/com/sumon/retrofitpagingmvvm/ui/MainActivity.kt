@@ -50,8 +50,8 @@ class MainActivity : AppCompatActivity() {
     viewModel=ViewModelProvider(this)[QuotesViewModel::class.java]
 
 viewModel.quotelist.observe(this){
-adapter.submitData(lifecycle, it
-)
+adapter.submitData(lifecycle,it)
+
 }
 
 
