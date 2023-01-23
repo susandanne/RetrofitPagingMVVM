@@ -18,6 +18,7 @@ class QutesAdaprter:PagingDataAdapter<MovieResult,QutesAdaprter.quotesViewHolder
     override fun onBindViewHolder(holder: quotesViewHolder, position: Int) {
         getItem(position).let {
             Glide.with(holder.sumanBinding.root.context).load(Util.posterUrlMake(it?.posterPath))
+                .into(holder.sumanBinding.image)
 
         }
     }
